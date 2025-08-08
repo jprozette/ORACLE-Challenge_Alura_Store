@@ -16,22 +16,22 @@ Analyze revenue data, customer reviews, shipping costs, and sales distribution b
 
 ```
 ORACLE-Challenge_Alura_Store/
-├── Info_Lojas/
+├── Outputs/
+│   ├── total_revenue_by_store.png
+│   ├── average_store_ratings.png
+│   ├── average_shipping_cost.png
+│   ├── category_sales_comparison_stores.png
+│   ├── general_category_sales_distribution.png
+│   ├── sales_heat_map.png
+│   ├── monthly_revenue_store_1.png
+│   ├── monthly_revenue_store_2.png
+│   ├── monthly_revenue_store_3.png
+│   └── monthly_revenue_store_4.png
+├── Stores_Info/
 │   ├── loja_1.csv
 │   ├── loja_2.csv
 │   ├── loja_3.csv
 │   └── loja_4.csv
-├── Outputs/
-│   ├── faturamento_total_por_loja.png
-│   ├── media_avaliacoes_lojas.png
-│   ├── custo_medio_frete.png
-│   ├── comparacao_vendas_categorias_lojas.png
-│   ├── distribuicao_geral_vendas_categoria.png
-│   ├── mapa_calor_vendas.png
-│   ├── faturamento_mensal_loja_1.png
-│   ├── faturamento_mensal_loja_2.png
-│   ├── faturamento_mensal_loja_3.png
-│   └── faturamento_mensal_loja_4.png
 ├── Code.ipynb
 ├── LICENSE
 └── README.md
@@ -43,7 +43,7 @@ ORACLE-Challenge_Alura_Store/
 
 ### 1. Total Revenue by Store
 
-![Total Revenue by Store](Outputs/faturamento_total_por_loja.png)
+![Total Revenue by Store](Outputs/total_revenue_by_store.png)
 
 **Analysis:** Store 1 has the highest revenue (R$ 1,534,509.12), while Store 4 has the lowest (R$ 1,384,497.58), a difference of R$ 150,011.
 
@@ -58,7 +58,7 @@ ORACLE-Challenge_Alura_Store/
 
 ### 2. Average Customer Reviews
 
-![Average Reviews by Store](Outputs/media_avaliacoes_lojas.png)
+![Average Reviews by Store](Outputs/average_store_ratings.png)
 
 **Analysis:** Store 3 has the best rating (4.05), while Store 1, despite having the highest revenue, has the worst rating (3.98).
 
@@ -73,7 +73,7 @@ ORACLE-Challenge_Alura_Store/
 
 ### 3. Average Shipping Cost
 
-![Average Shipping Cost](Outputs/custo_medio_frete.png)
+![Average Shipping Cost](Outputs/average_shipping_cost.png)
 
 **Analysis:** Store 4 has the lowest shipping cost (R$ 31.28), while Store 1 has the highest (R$ 34.69).
 
@@ -88,7 +88,7 @@ ORACLE-Challenge_Alura_Store/
 
 ### 4. General Sales Distribution by Category
 
-![General Sales Distribution](Outputs/distribuicao_geral_vendas_categoria.png)
+![General Sales Distribution](Outputs/general_category_sales_distribution.png)
 
 **Analysis:** Furniture (20.0%) and Electronics (18.8%) are the dominant categories across all stores.
 
@@ -96,7 +96,7 @@ ORACLE-Challenge_Alura_Store/
 
 ### 5. Sales Comparison by Category Between Stores
 
-![Sales Comparison by Category](Outputs/comparacao_vendas_categorias_lojas.png)
+![Sales Comparison by Category](Outputs/category_sales_comparison_stores.png)
 
 **Analysis:** Store 3 stands out with the highest participation in furniture (21.2%), a category with higher added value.
 
@@ -104,9 +104,9 @@ ORACLE-Challenge_Alura_Store/
 
 ### 6. Heat Map - Sales by Product
 
-![Sales Heat Map](Outputs/mapa_calor_vendas.png)
+![Sales Heat Map](Outputs/sales_heat_map.png)
 
-**Analysis:** Normalized visualization shows specific sales patterns by product in each store, identifying best and worst-selling products.
+**Analysis:** Normalized visualization shows specific sales patterns by product in each store, identifying best and worst-selling products with visual indicators (+ for best, ↓ for worst).
 
 ---
 
@@ -134,16 +134,16 @@ ORACLE-Challenge_Alura_Store/
 ## 📈 Temporal Analysis - Monthly Revenue
 
 ### Store 1
-![Monthly Revenue Store 1](Outputs/faturamento_mensal_loja_1.png)
+![Monthly Revenue Store 1](Outputs/monthly_revenue_store_1.png)
 
 ### Store 2
-![Monthly Revenue Store 2](Outputs/faturamento_mensal_loja_2.png)
+![Monthly Revenue Store 2](Outputs/monthly_revenue_store_2.png)
 
 ### Store 3
-![Monthly Revenue Store 3](Outputs/faturamento_mensal_loja_3.png)
+![Monthly Revenue Store 3](Outputs/monthly_revenue_store_3.png)
 
 ### Store 4
-![Monthly Revenue Store 4](Outputs/faturamento_mensal_loja_4.png)
+![Monthly Revenue Store 4](Outputs/monthly_revenue_store_4.png)
 
 ---
 
@@ -151,7 +151,7 @@ ORACLE-Challenge_Alura_Store/
 
 ### Prerequisites
 ```bash
-pip install pandas matplotlib jupyter
+pip install pandas matplotlib seaborn jupyter
 ```
 
 ### Installation
@@ -166,7 +166,15 @@ cd ORACLE-Challenge_Alura_Store
 jupyter notebook
 ```
 
-3. Open the main analysis file and execute the cells sequentially.
+3. Open the `Code.ipynb` file and execute the cells sequentially.
+
+### Data Structure
+Each CSV file in the `StoresA_Info/` folder contains:
+- Sales data by product
+- Customer reviews
+- Shipping information
+- Product categories
+- Transaction dates
 
 ---
 
@@ -179,6 +187,7 @@ jupyter notebook
 - **Sales Distribution by Category**
 - **Temporal Revenue Analysis**
 - **Product Sales Heat Map**
+- **Efficiency Score** (Revenue/Shipping Cost ratio)
 
 ### Product Categories
 - Furniture (20.0%)
@@ -189,6 +198,32 @@ jupyter notebook
 - Musical Instruments (8.0%)
 - Books (7.9%)
 - Household Items (7.7%)
+
+---
+
+## 📋 Generated Files
+
+The analysis generates the following visualization files:
+- `total_revenue_by_store.png` - Consolidated revenue comparison
+- `monthly_revenue_store_[1-4].png` - Individual monthly trends
+- `average_store_ratings.png` - Customer satisfaction comparison
+- `average_shipping_cost.png` - Logistics efficiency analysis
+- `category_sales_comparison_stores.png` - Category performance by store
+- `general_category_sales_distribution.png` - Overall market overview
+- `sales_heat_map.png` - Product performance matrix
+
+---
+
+## 🔍 Key Insights
+
+### Performance Summary
+- **Best Revenue**: Store 1 (R$ 1,534,509.12)
+- **Best Customer Rating**: Store 3 (4.05/5.0)
+- **Best Shipping Efficiency**: Store 4 (R$ 31.28)
+- **Most Balanced Performance**: Store 2
+
+### Strategic Analysis
+The analysis reveals that while Store 1 generates the highest revenue, it has the lowest customer satisfaction and highest shipping costs. Store 3 demonstrates the best balance between customer satisfaction and operational efficiency. Store 4, despite having the best shipping costs, shows the lowest overall revenue generation.
 
 ---
 
@@ -223,6 +258,4 @@ This project is under the MIT license. See the `LICENSE` file for more details.
 For questions or suggestions about this project, contact through GitHub or open an issue in the repository.
 
 ---
-
-*Developed with 💙 for Alura's Oracle Challenge*
 
