@@ -32,6 +32,8 @@ ORACLE-Challenge_Alura_Store/
 │   ├── faturamento_mensal_loja_2.png
 │   ├── faturamento_mensal_loja_3.png
 │   └── faturamento_mensal_loja_4.png
+├── Code.ipynb
+├── LICENSE
 └── README.md
 ```
 
