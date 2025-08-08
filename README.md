@@ -1,18 +1,18 @@
 # Oracle Challenge - Alura Store
 
-## 📊 Análise de Dados para Decisão Estratégica de Vendas
+## 📊 Data Analysis for Strategic Sales Decision
 
-Este projeto apresenta uma análise completa dos dados de vendas das 4 lojas da rede Alura Store, com o objetivo de identificar qual unidade deve ser vendida para otimizar o portfólio de negócios do Senhor João.
-
----
-
-## 🎯 Objetivo do Projeto
-
-Analisar dados de faturamento, avaliações de clientes, custos de frete e distribuição de vendas por categoria das 4 lojas da rede Alura Store para recomendar qual loja vender, baseando-se em critérios de eficiência operacional e desempenho financeiro.
+This project presents a comprehensive analysis of sales data from the 4 stores in the Alura Store network, with the objective of identifying which unit should be sold to optimize Mr. João's business portfolio.
 
 ---
 
-## 📁 Estrutura do Projeto
+## 🎯 Project Objective
+
+Analyze revenue data, customer reviews, shipping costs, and sales distribution by category from the 4 stores in the Alura Store network to recommend which store to sell, based on operational efficiency and financial performance criteria.
+
+---
+
+## 📁 Project Structure
 
 ```
 ORACLE-Challenge_Alura_Store/
@@ -39,187 +39,190 @@ ORACLE-Challenge_Alura_Store/
 
 ---
 
-## 📊 Principais Resultados e Visualizações
+## 📊 Main Results and Visualizations
 
-### 1. Faturamento Total por Loja
+### 1. Total Revenue by Store
 
-![Faturamento Total por Loja](Outputs/faturamento_total_por_loja.png)
+![Total Revenue by Store](Outputs/faturamento_total_por_loja.png)
 
-**Análise:** A Loja 1 apresenta o maior faturamento (R$ 1.534.509,12), enquanto a Loja 4 tem o menor (R$ 1.384.497,58), uma diferença de R$ 150.011.
+**Analysis:** Store 1 has the highest revenue (R$ 1,534,509.12), while Store 4 has the lowest (R$ 1,384,497.58), a difference of R$ 150,011.
 
-| Loja | Faturamento | Posição |
-|------|-------------|---------|
-| Loja 1 | R$ 1.534.509,12 | 1º |
-| Loja 2 | R$ 1.488.459,06 | 2º |
-| Loja 3 | R$ 1.464.025,03 | 3º |
-| Loja 4 | R$ 1.384.497,58 | 4º |
-
----
-
-### 2. Média de Avaliações dos Clientes
-
-![Média de Avaliações por Loja](Outputs/media_avaliacoes_lojas.png)
-
-**Análise:** A Loja 3 possui a melhor avaliação (4,05), enquanto a Loja 1, apesar do maior faturamento, tem a pior avaliação (3,98).
-
-| Loja | Média | Posição |
-|------|-------|---------|
-| Loja 3 | 4,05 | 1º |
-| Loja 2 | 4,04 | 2º |
-| Loja 4 | 4,00 | 3º |
-| Loja 1 | 3,98 | 4º |
+| Store | Revenue | Position |
+|-------|---------|----------|
+| Store 1 | R$ 1,534,509.12 | 1st |
+| Store 2 | R$ 1,488,459.06 | 2nd |
+| Store 3 | R$ 1,464,025.03 | 3rd |
+| Store 4 | R$ 1,384,497.58 | 4th |
 
 ---
 
-### 3. Custo Médio de Frete
+### 2. Average Customer Reviews
 
-![Custo Médio de Frete](Outputs/custo_medio_frete.png)
+![Average Reviews by Store](Outputs/media_avaliacoes_lojas.png)
 
-**Análise:** A Loja 4 tem o menor custo de frete (R$ 31,28), enquanto a Loja 1 tem o maior (R$ 34,69).
+**Analysis:** Store 3 has the best rating (4.05), while Store 1, despite having the highest revenue, has the worst rating (3.98).
 
-| Loja | Custo Médio | Posição |
-|------|-------------|---------|
-| Loja 4 | R$ 31,28 | 1º (menor) |
-| Loja 3 | R$ 33,07 | 2º |
-| Loja 2 | R$ 33,62 | 3º |
-| Loja 1 | R$ 34,69 | 4º (maior) |
-
----
-
-### 4. Distribuição Geral de Vendas por Categoria
-
-![Distribuição Geral de Vendas](Outputs/distribuicao_geral_vendas_categoria.png)
-
-**Análise:** Móveis (20,0%) e Eletrônicos (18,8%) são as categorias dominantes em todas as lojas.
+| Store | Average | Position |
+|-------|---------|----------|
+| Store 3 | 4.05 | 1st |
+| Store 2 | 4.04 | 2nd |
+| Store 4 | 4.00 | 3rd |
+| Store 1 | 3.98 | 4th |
 
 ---
 
-### 5. Comparação de Vendas por Categoria entre Lojas
+### 3. Average Shipping Cost
 
-![Comparação de Vendas por Categoria](Outputs/comparacao_vendas_categorias_lojas.png)
+![Average Shipping Cost](Outputs/custo_medio_frete.png)
 
-**Análise:** A Loja 3 se destaca com maior participação em móveis (21,2%), categoria de maior valor agregado.
+**Analysis:** Store 4 has the lowest shipping cost (R$ 31.28), while Store 1 has the highest (R$ 34.69).
 
----
-
-### 6. Mapa de Calor - Vendas por Produto
-
-![Mapa de Calor de Vendas](Outputs/mapa_calor_vendas.png)
-
-**Análise:** Visualização normalizada mostra padrões de vendas específicos por produto em cada loja, identificando produtos mais e menos vendidos.
-
----
-
-## 🎯 Recomendação Final
-
-### **VENDER A LOJA 4**
-
-![Recomendação](https://img.shields.io/badge/RECOMENDA%C3%87%C3%83O-VENDER%20LOJA%204-red?style=for-the-badge)
-
-#### Justificativas:
-
-✅ **Menor faturamento** da rede (R$ 1.384.497,58)  
-✅ **Menor impacto** na receita total (23,6% do faturamento)  
-✅ **Preservação** das lojas com melhor desempenho  
-✅ **Otimização** do portfólio de negócios  
-
-#### Benefícios da Decisão:
-- Concentração de recursos nas 3 lojas mais eficientes
-- Manutenção de 76,4% do faturamento total da rede
-- Preservação das lojas com melhor satisfação do cliente
-- Liberação de capital para o novo empreendimento
+| Store | Average Cost | Position |
+|-------|--------------|----------|
+| Store 4 | R$ 31.28 | 1st (lowest) |
+| Store 3 | R$ 33.07 | 2nd |
+| Store 2 | R$ 33.62 | 3rd |
+| Store 1 | R$ 34.69 | 4th (highest) |
 
 ---
 
-## 📈 Análise Temporal - Faturamento Mensal
+### 4. General Sales Distribution by Category
 
-### Loja 1
-![Faturamento Mensal Loja 1](Outputs/faturamento_mensal_loja_1.png)
+![General Sales Distribution](Outputs/distribuicao_geral_vendas_categoria.png)
 
-### Loja 2
-![Faturamento Mensal Loja 2](Outputs/faturamento_mensal_loja_2.png)
-
-### Loja 3
-![Faturamento Mensal Loja 3](Outputs/faturamento_mensal_loja_3.png)
-
-### Loja 4
-![Faturamento Mensal Loja 4](Outputs/faturamento_mensal_loja_4.png)
+**Analysis:** Furniture (20.0%) and Electronics (18.8%) are the dominant categories across all stores.
 
 ---
 
-## 🚀 Como Executar o Projeto
+### 5. Sales Comparison by Category Between Stores
 
-### Pré-requisitos
+![Sales Comparison by Category](Outputs/comparacao_vendas_categorias_lojas.png)
+
+**Analysis:** Store 3 stands out with the highest participation in furniture (21.2%), a category with higher added value.
+
+---
+
+### 6. Heat Map - Sales by Product
+
+![Sales Heat Map](Outputs/mapa_calor_vendas.png)
+
+**Analysis:** Normalized visualization shows specific sales patterns by product in each store, identifying best and worst-selling products.
+
+---
+
+## 🎯 Final Recommendation
+
+### **SELL STORE 4**
+
+![Recommendation](https://img.shields.io/badge/RECOMMENDATION-SELL%20STORE%204-red?style=for-the-badge)
+
+#### Justifications:
+
+✅ **Lowest revenue** in the network (R$ 1,384,497.58)  
+✅ **Minimal impact** on total revenue (23.6% of total revenue)  
+✅ **Preservation** of best-performing stores  
+✅ **Business portfolio optimization**  
+
+#### Decision Benefits:
+- Resource concentration on the 3 most efficient stores
+- Maintenance of 76.4% of the network's total revenue
+- Preservation of stores with better customer satisfaction
+- Capital release for the new venture
+
+---
+
+## 📈 Temporal Analysis - Monthly Revenue
+
+### Store 1
+![Monthly Revenue Store 1](Outputs/faturamento_mensal_loja_1.png)
+
+### Store 2
+![Monthly Revenue Store 2](Outputs/faturamento_mensal_loja_2.png)
+
+### Store 3
+![Monthly Revenue Store 3](Outputs/faturamento_mensal_loja_3.png)
+
+### Store 4
+![Monthly Revenue Store 4](Outputs/faturamento_mensal_loja_4.png)
+
+---
+
+## 🚀 How to Run the Project
+
+### Prerequisites
 ```bash
 pip install pandas matplotlib jupyter
 ```
 
-### Instalação
-1. Clone o repositório:
+### Installation
+1. Clone the repository:
 ```bash
 git clone https://github.com/jprozette/ORACLE-Challenge_Alura_Store.git
 cd ORACLE-Challenge_Alura_Store
 ```
 
-2. Execute o Jupyter Notebook:
+2. Run Jupyter Notebook:
 ```bash
 jupyter notebook
 ```
 
-3. Abra o arquivo principal de análise e execute as células sequencialmente.
+3. Open the main analysis file and execute the cells sequentially.
 
 ---
 
-## 📊 Métricas Analisadas
+## 📊 Analyzed Metrics
 
-### Dados Principais
-- **Faturamento Total por Loja**
-- **Média de Avaliações dos Clientes** (escala 0-5)
-- **Custo Médio de Frete**
-- **Distribuição de Vendas por Categoria**
-- **Análise Temporal de Faturamento**
-- **Mapa de Calor de Vendas por Produto**
+### Main Data
+- **Total Revenue by Store**
+- **Average Customer Reviews** (0-5 scale)
+- **Average Shipping Cost**
+- **Sales Distribution by Category**
+- **Temporal Revenue Analysis**
+- **Product Sales Heat Map**
 
-### Categorias de Produtos
-- Móveis (20,0%)
-- Eletrônicos (18,8%)
-- Brinquedos (13,7%)
-- Eletrodomésticos (12,2%)
-- Esporte e Lazer (11,8%)
-- Instrumentos Musicais (8,0%)
-- Livros (7,9%)
-- Utilidades Domésticas (7,7%)
-
----
-
-## 🤝 Contribuições
-
-Este projeto foi desenvolvido como parte do Oracle Challenge da Alura. Contribuições são bem-vindas através de:
-
-1. Fork do projeto
-2. Criação de uma branch para sua feature
-3. Commit das mudanças
-4. Push para a branch
-5. Abertura de um Pull Request
+### Product Categories
+- Furniture (20.0%)
+- Electronics (18.8%)
+- Toys (13.7%)
+- Home Appliances (12.2%)
+- Sports & Leisure (11.8%)
+- Musical Instruments (8.0%)
+- Books (7.9%)
+- Household Items (7.7%)
 
 ---
 
-## 📝 Licença
+## 🤝 Contributions
 
-Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+This project was developed as part of Alura's Oracle Challenge. Contributions are welcome through:
+
+1. Fork the project
+2. Create a branch for your feature
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
 
 ---
 
-## 👨‍💻 Autor
+## 📝 License
+
+This project is under the MIT license. See the `LICENSE` file for more details.
+
+---
+
+## 👨‍💻 Author
 
 **João Paulo Rozette**
 - GitHub: [@jprozette](https://github.com/jprozette)
-- Projeto: Oracle Challenge Alura Store
+- Project: Oracle Challenge Alura Store
 
 ---
 
-## 📞 Contato
+## 📞 Contact
 
-Para dúvidas ou sugestões sobre este projeto, entre em contato através do GitHub ou abra uma issue no repositório.
+For questions or suggestions about this project, contact through GitHub or open an issue in the repository.
 
 ---
+
+*Developed with 💙 for Alura's Oracle Challenge*
+
